@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "KeepPic",
+    "slug": "keeppic",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.bosskorn.keeppic",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "KeepPic needs access to your photos and videos so it can back them up safely.",
+          "savePhotosPermission": "KeepPic needs permission to restore photos and videos to your device.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "backupApiUrl": "${EXPO_PUBLIC_BACKUP_API_URL}"
+    }
+  }
+}
